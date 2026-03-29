@@ -8,14 +8,14 @@ spring:
         user-name-attribute: id
     registration:
       google:
-        client-id: 204915941072-fckl8bu6ouj5lbq3q35ebb8k8hltns50.apps.googleusercontent.com
-        client-secret: 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
+        client-id: ${GOOGLE_OAUTH_CLIENT_ID}
+        client-secret: ${GOOGLE_OAUTH_CLIENT_SECRET}
       github:
-        client-id: Ov23liDNZOj6fRNAyIr7
-        client-secret: 7348245f6010707b73a9242b1fff741cf7bfa953
+        client-id: ${GITHUB_OAUTH_CLIENT_ID}
+        client-secret: ${GITHUB_OAUTH_CLIENT_SECRET}
       twitter:
-        client-id: aksjbiayfav
-        client-secret: akfgisyfvqouj
+        client-id: ${TWITTER_OAUTH_CLIENT_ID}
+        client-secret: ${TWITTER_OAUTH_CLIENT_SECRET}
         redirect-uri: "{baseUrl}/login/oauth2/code/twitter"
         authorization-grant-type: authorization_code
         scope:

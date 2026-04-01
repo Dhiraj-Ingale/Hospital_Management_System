@@ -1,4 +1,4 @@
-package com.codingshuttle.youtube.hospitalManagement.entity;
+package com.codingshuttle.youtube.hospitalManagement.entity.type;
 
 public enum AuthProviderType {
     GOOGLE,
